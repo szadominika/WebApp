@@ -61,8 +61,8 @@
 .icon-eye:before { content: '\e804'; } /* '' */
 .icon-eye-off:before { content: '\e805'; } /* '' */
 .icon-money:before { content: '\e806'; } /* '' */
-.icon-dollar:before { content: '\e807'; } /* '' */
-.icon-cog:before { content: '\e808'; } /* '' */
+.icon-dollar:before { content: '\e807'; font-size:60px;} /* '' */
+.icon-cog:before { content: '\e808'; font-size:60px;} /* '' */
 .icon-mail-alt:before { content: '\f0e0';font-size:20px; } /* '' */
-.icon-chart-pie:before { content: '\f200'; } /* '' */
+.icon-chart-pie:before { content: '\f200'; font-size:60px;} /* '' */
 .icon-user-circle-o:before { content: '\f2be'; } /* '' */
