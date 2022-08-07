@@ -38,7 +38,7 @@
 				</ul>
 			</nav>
 			
-			<section>
+			<section id="section1">
 				<div class="row">
 					<label> Amount: <input type="number" name="amount" ></label>
 				</div>
@@ -48,7 +48,7 @@
 					<select id="payment" name="payment">
 					
 						<option value="c">cash</option>
-						<option value="dc" selected>debet card</option>
+						<option value="dc" selected>debit card</option>
 						<option value="cc">credit card</option>
 					
 					</select>				
@@ -59,42 +59,38 @@
 				</div>
 
 				<div class="row">
-					<fieldset>
-					
-						<legend> Category </legend>
-						
-						<div class="col">
-							<div><label><input type="radio" value="1" name="category" checked> Food </label></div>
-							<div><label><input type="radio" value="2" name="category"> Acomodation </label></div>
-							<div><label><input type="radio" value="3" name="category"> Transport </label></div>
-						</div>
-						
-						<div class="col">
-							<div><label><input type="radio" value="4" name="category" checked> Health care </label></div>
-							<div><label><input type="radio" value="5" name="category"> Clothes </label></div>
-							<div><label><input type="radio" value="6" name="category"> Family </label></div>
-						</div>
-						
-						<div class="col">
-							<div><label><input type="radio" value="7" name="category" checked> Leisure</label></div>
-							<div><label><input type="radio" value="8" name="category"> Education </label></div>
-							<div><label><input type="radio" value="9" name="category"> Other </label></div>
-						</div>
-								
-					</fieldset>
+					<label for="category"> Category</label>
+						<select id="category" name="category">
+							<option value="1">Food</option>
+							<option value="2">Rent</option>
+							<option value="3">Transport</option>
+							<option value="4">Healthcare</option>
+							<option value="5">Clothes</option>
+							<option value="6">Telecommunication</option>
+							<option value="7">Hygiene</option>
+							<option value="8">Entertainment</option>
+							<option value="9">Trips</option>
+							<option value="10">Training</option>
+							<option value="11">Books</option>
+							<option value="12">Savings</option>
+							<option value="13">Debts</option>
+							<option value="14">Other</option>
+					</select>	
 				</div>	
 				
 				<div class="row">
 					<div><label for="comment"> Comment: (optional)</label></div>
 					<textarea name="comment" id="comment" maxlength="25" minlength="10"></textarea>
 				</div>
-							
-				<div class="row">
-					<input type="submit" value="Save">
-					<input type="reset" value="Cancel">
-				</div>		
 				
 			</section>
+			
+				<div class="row1">
+				
+					<input type="submit" value="Save">
+					<input type="reset" value="Cancel">
+					
+				</div>
 	
 		</main>		
 	</div>
