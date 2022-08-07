@@ -2,23 +2,29 @@ body
 {
 	/* Background pattern from subtlepatterns.com */
 	background-image: url("img/hexellence.png");
-	font-size: 15px;
+	font-size: 20px;
 	font-family: 'Lato', sans-serif;
+	width: 100%;
+}
+
+.logo
+{
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 5px;
 }
 
 #container
 {
 	background-color: white;
-	width: 600px;
-	padding: 50px;
-	height: 420px;
+	width: 960px;
+	padding: 20px;
+	height: 410px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
 	-webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-
 }
 
 header
@@ -29,13 +35,6 @@ header
 	color: black;
 	text-align: center;
 	letter-spacing: 3px;
-}
-
-.logo
-{
-	font-size: 40px;
-	font-weight: 700;
-	letter-spacing: 5px;
 }
 
 input[type=text],
@@ -70,6 +69,7 @@ input[type=password]:focus
 	margin-right: auto;
 	text-align: center;
 	padding: 20px;
+	font-size: 15px;
 }
 
 .icon
@@ -78,23 +78,38 @@ input[type=password]:focus
 	text-align: center;
 	background-color: #438c6f;
 	width: 40px;
-	height: 45px;
+	height: 47px;
 	border-radius: 5px;
 	padding-top:10px;
 	box-sizing: border-box;
 	outline: none;
 	margin-top: 10px;
-	margin-left: 130px;
+	margin-left: 310px;
+}
+
+.icon1
+{
+	float: left;
+	text-align: center;
+	background-color: #438c6f;
+	width: 40px;
+	height: 47px;
+	border-radius: 5px;
+	padding-top:10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 30px;
+	margin-left: 360px;
 }
 
 input[type=submit]
 {
 	width: 200px;
-	height: 45px;
+	height: 47px;
 	background-color: #efefef;
 	font-size:20px;
 	color: black;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 	border: none;
 	border-radius: 5px;
@@ -123,15 +138,21 @@ a:hover
 	margin-top: 15px;
 }
 
+.rectangle
+{
+	width: 100%;
+	height: 40%;
+	margin: 0;
+	text-align: center;
+}
+
 .tile1
 {
-	margin-right: 50px;
-	margin-left:50px;
-	margin-bottom:10px;
-	margin-top:10px;
-	width: 200px;
+	margin-left: 145px;
+	margin-right: 145px;
+	margin-top: 60px;
+	width: 180px;
 	height: 90px;
-	padding-top:10px;
 	background-color: #438c6f;
 	float: left;
 	text-align: center;
@@ -139,16 +160,135 @@ a:hover
 	overflow: hidden;
 }
 
-.tile1:hover tilelink
-{
-	background-color: #327b5e;
-	-webkit-transform: scale(1.15);
-	-ms-transform: scale(1.15);
-	transform: scale(1.15);
+.topnav
+{ 
+	width: 100%;
+	background-color: #438c6f;
+	text-align: center;
+	border-top: 1px solid #549d7f;
+	border-bottom: 1px solid #549d7f;
+	padding: 0;
+	margin-left: 0;
 }
 
-.tile1 tilelink
+ul
 {
-	transition: all 0.5s ease-in-out;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 15px;
+	height: 30px;
+	line-height: 200%;
+	display: inline-block;
+
+}
+
+ul a
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+ul > li
+{
+	float: left;
+	width: 186px;
+	height: 30px;
+	border-right: 1px dashed #751b1b;
+}
+
+ul > li:first-child
+{
+	border-left: 1px dashed #751b1b;
+}
+
+ul > li:hover
+{
+	background-color: #327b5e;
+}
+
+ul > li:hover > a
+{
+	color: #105a3d;
+}
+
+section
+{
+	width: 100%;
+	height: 100%px;
+	background-color: #e9f3e9;
+	color: black;
+}
+
+.col
+{
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 15px;
+	color: black;
+}
+
+.row
+{
+	margin: 10px;
+}
+
+#comment
+{
+	width: 80%;
+}
+
+input[type=number],
+input[type=date]
+{
+	width: 120px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top:10px;
+}
+
+input[type=radio]
+{
+	width: 50px;
+	background-color: #e9f3e9;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#payment
+{
+	width: 120px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top:10px;
+}
+
+.row input[type=submit],
+input[type=reset]
+{
+	width: 100px;
+	height: 20px;
+	background-color: #438c6f;
+	font-size: 15px;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	outline: none;
+	text-align: center;
+	margin-left: 250px;
 }
 

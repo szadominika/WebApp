@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>BudgetApp</title>
+	<meta name="description" content="Take responsibility for your finances" />
+	<meta name="keywords" content="budget, control, personal, application, finances" />
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@400;900&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+		<header>
+			<div class="logo">
+				<i class="icon-money"></i>
+				<a href="index.html" target="_blank"><span style="color: #438c6f">Budget</span>App.com </a>
+				<i class="icon-money"></i>			
+			</div>
+			<p> Welcome to your personal finance manager</p>
+		</header>
+		
+	<div id="container">	
+		<main>	
+		
+			<nav class="topnav">
+				<ul>
+					<li><a href="#">Add income</a></li>
+					<li><a href="#">Add expense</a></li>
+					<li><a href="#">View balance</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Log out!</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+				<div class="row">
+					<label> Amount: <input type="number" name="amount" ></label>
+				</div>
+				
+				<div class="row">
+					<label for="payment"> Payment method</label>
+					<select id="payment" name="payment">
+					
+						<option value="c">cash</option>
+						<option value="dc" selected>debet card</option>
+						<option value="cc">credit card</option>
+					
+					</select>				
+				</div>
+				
+				<div class="row">
+					<label> Date: <input type="date" name="dzien"></label>
+				</div>
+
+				<div class="row">
+					<fieldset>
+					
+						<legend> Category </legend>
+						
+						<div class="col">
+							<div><label><input type="radio" value="1" name="category" checked> Food </label></div>
+							<div><label><input type="radio" value="2" name="category"> Acomodation </label></div>
+							<div><label><input type="radio" value="3" name="category"> Transport </label></div>
+						</div>
+						
+						<div class="col">
+							<div><label><input type="radio" value="4" name="category" checked> Health care </label></div>
+							<div><label><input type="radio" value="5" name="category"> Clothes </label></div>
+							<div><label><input type="radio" value="6" name="category"> Family </label></div>
+						</div>
+						
+						<div class="col">
+							<div><label><input type="radio" value="7" name="category" checked> Leisure</label></div>
+							<div><label><input type="radio" value="8" name="category"> Education </label></div>
+							<div><label><input type="radio" value="9" name="category"> Other </label></div>
+						</div>
+								
+					</fieldset>
+				</div>	
+				
+				<div class="row">
+					<div><label for="comment"> Comment: (optional)</label></div>
+					<textarea name="comment" id="comment" maxlength="25" minlength="10"></textarea>
+				</div>
+							
+				<div class="row">
+					<input type="submit" value="Save">
+					<input type="reset" value="Cancel">
+				</div>		
+				
+			</section>
+	
+		</main>		
+	</div>
+	
+	<footer>		
+		<div class="info">
+				BudgetApp.com &copy; 2022
+		</div>	
+	</footer>
+	
+</body>
+</html>
