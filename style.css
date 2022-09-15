@@ -20,6 +20,15 @@ body
 	letter-spacing: 5px;
 }
 
+#title01
+{
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #a5be00;
+	margin-top: 20px;
+}
+
 #logo{
 	color:#a5be00;
 }
@@ -93,7 +102,14 @@ a:hover
     border-radius: 10px;
 }
 
-#mainNavbar {
+.nav-link{
+		 font-size: 0.9rem;
+}
+
+
+
+
+/*#mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;    
 }
@@ -108,8 +124,15 @@ a:hover
 
 #mainNavbar .navbar-brand {
     color: #EA1C2C;
-    font-size: 1.5rem;
+    font-size: 1,0 rem;
+}*/
+
+.menu {
+    text-align: center;
+    background-color: #a5be00;
 }
+
+
 
 /*#container
 {
