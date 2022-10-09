@@ -71,7 +71,6 @@ body
 
 .footer {
     font-size: 0.9em;
-    position: absolute;
     bottom: 0;
 }
 
@@ -125,7 +124,6 @@ ul > li.nav-item {
     border-radius: 5px;
 }
 
-
 select{
 	border: 1px solid #cccccc;
     border-radius: 3px;
@@ -146,10 +144,24 @@ input[type=date]:hover{
     border-radius: 3px;	
 }
 
+.dropdown-item{
+	color:#ffffff;
+	background-color: #a5be00;
+}
+.dropdown-item:hover{
+	background-color: #a5be00;
+	color:#ffffff;
+}
+
+.dropdown-item:focus{
+	color: #a14da0;
+}
+
 
 .dateButton > button {
     background-color: #a5be00;
     border-radius: 3px;
+	color:#ffffff;
 }
 
 .dateButton > button:hover,
@@ -178,10 +190,6 @@ td {
     text-align: left;
     font-size: 0.85em;
     border-right: 1px solid #b3b3b3;
-}
-
-td.comment {
-    border: none;
 }
 
 tr {
@@ -215,16 +223,6 @@ tr:last-child {
     border-radius: 5px;
 }
 
-#balance {
-    font-weight: 700;
-}
-
-#result {
-    font-size: 1.2em;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
 .timePeriod {
     position: relative;
 }
@@ -247,21 +245,6 @@ tr:last-child {
     -webkit-box-shadow: 7px 10px 21px -16px rgba(17,18,17,1);
     -moz-box-shadow: 7px 10px 21px -16px rgba(17,18,17,1);
     box-shadow: 7px 10px 21px -16px rgba(17,18,17,1);
-}
-
-
-
-.limit {
-    background-color: #dcefeb;
-    border-top: 0px !important;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-.limitInfo {
-    font-size: 0.85em;
-    background: #ffb3b3;
-    /*background: #aaff80;*/
 }
 
 
