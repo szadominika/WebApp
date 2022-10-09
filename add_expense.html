@@ -34,220 +34,115 @@
 			
 		 </header>
 		 
-		 <section class="container-fluid mt-4 menu">
+
                 
-                <nav class="navbar navbar-dark navbar-expand-lg">
+         <nav class="navbar navbar-dark navbar-expand-lg container-fluid mt-4 menu">
                     
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" aria-controls="mainMenu" aria-expanded="false" >
-						<span class="navbar-toggler-icon"></span>
-					</button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Navigation Toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     
-                    <div class="collapse navbar-collapse" id="navLinks">
+                    <div class="collapse navbar-collapse" id="mainMenu">
                         
-                        <ul class="navbar-nav mx-auto">
+				<ul class="navbar-nav mx-auto">
                             
-                            <li class="col-lg-2 mr-1 nav-item">
-                                <a class="nav-link" href="index.html">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-										  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-										  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-									</svg>
-							Home</a>
-                            </li>
+					<li class="col-lg-2 mr-1 nav-item">
+						<a class="nav-link" href="index.html">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+								<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+							</svg>
+						Home</a>
+                    </li>
                             
-                            <li class="col-lg-2 mr-1 nav-item">
-                                <a class="nav-link" href="add_income.html"><i class="icon-money"></i>Add Income</a>
-                            </li>
+                    <li class="col-lg-2 mr-1 nav-item">
+                        <a class="nav-link" href="add_income.html" target="_blank" role="button"><i class="icon-money"></i>Add Income</a>
+                    </li>
                             
-                            <li class="col-lg-2 mr-1 nav-item ">
-                                <a class="nav-link" href="add_expense.html"><i class="icon-money"></i> Add Expense</a>
-                            </li>
+                    <li class="col-lg-2 mr-1 nav-item ">
+						<a class="nav-link" href="add_expense.html" target="_blank" role="button"><i class="icon-money"></i> Add Expense</a>
+                    </li>
                             
-                            <li class="col-lg-2 mr-1 nav-item dropdown">
-                                
-                                <a class="nav-link" role="button"><i class="icon-chart-pie"></i> View Balance</a>
-                                
-                            </li>
+                    <li class="col-lg-2 mr-1 nav-item dropdown">                                
+						<a class="nav-link" href="balance.html" target="_blank" role="button"><i class="icon-chart-pie"></i> View Balance</a>                                
+                    </li>
                             
-                            <li class="col-lg-2 mr-1 nav-item dropdown">
-                                
-                                <a class="nav-link" role="button"><i class="icon-cog"></i> Settings</a>
-								
-                            </li>
+                    <li class="col-lg-2 mr-1 nav-item dropdown">                                
+						<a class="nav-link" href="#" target="_blank" role="button"><i class="icon-cog"></i> Settings</a>								
+                    </li>
                             
-                            <li class="col-lg-2 nav-item">
-                                
-                                <a class="nav-link" href="/logout"><i class="icon-logout"></i> Sign out</a>
-                                
-                            </li>
+                     <li class="col-lg-2 nav-item">                                
+						<a class="nav-link" href="index.html" target="_blank" role="button"><i class="icon-logout"></i> Sign out</a>                                
+                     </li>
                             
-                        </ul>
-                        
-                    </div>
-                    
-                </nav>
-                
-            </section>
-			
+					</ul>                        
+               </div>                    
+           </nav>
+
 			<main>
-			<h3 id="title01"> ADDING EXPENSE </h3>
-			<form class="col-sm-10  mx-auto " method="#" action="#" id="addExpense">
-				<div class="row justify-content-around">
-					<div class="col-sm-6">
-                    	<div class="input-group mt-3 mb-3">
-							  <span class="input-group-text">$</span>
+				<h3 id="title01"> ADDING EXPENSE </h3>
+				<form class="col-sm-10  mx-auto "  id="addExpense">
+					<div class="row justify-content-around">
+						<div class="col-xs-8">
+						
+							<div class="input-group mt-3 mb-3">
+								<span class="input-group-text">Amount</span>
 									<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-							  <span class="input-group-text">.00</span>
-						</div>    
+							</div>    
 
-    <div class="input-group mt-3 mb-3 ">
-			<span class="input-group-text">Date</span>
-            <input id="startDate" class="form-control" type="date" />
-            <span id="startDateSelected"></span>
-
-    </div>
+							<div class="input-group mt-3 mb-3 ">
+									<span class="input-group-text">Date</span>
+										<input id="startDate" class="form-control" type="date" />
+									<span id="startDateSelected"></span>
+							</div>
 													
-					<div class="input-group mb-3 mt-3">
-					  <label class="input-group-text" for="inputGroupSelect">Payment method</label>
-						  <select class="form-select" id="inputGroupSelect">
-							<option selected>Choose...</option>
-							<option value="1">cash</option>
-							<option value="2">credit card</option>
-							<option value="3">debit card</option>
-						  </select>
-					</div>
+							<div class="input-group mb-3 mt-3">
+							  <label class="input-group-text" for="inputGroupSelect">Payment method</label>
+								  <select class="form-select" id="inputGroupSelect">
+									<option selected>Choose...</option>
+									<option value="1">cash</option>
+									<option value="2">credit card</option>
+									<option value="3">debit card</option>
+								  </select>
+							</div>
 					
-										<div class="input-group mb-3 mt-3">
-					  <label class="input-group-text" for="inputGroupCategory">Category</label>
-						  <select class="form-select" id="inputGroupCategory">
-							<option selected>Choose...</option>
-							<option value="1">house</option>
-							<option value="2">health</option>
-							<option value="3">car</option>
-							<option value="4">car</option>
-							<option value="5">car</option>
-							<option value="6">car</option>
-							<option value="7">car</option>
-							<option value="8">car</option>
-							<option value="9">car</option>
-						  </select>
-					</div>
+							<div class="input-group mb-3 mt-3">
+								<label class="input-group-text" for="inputGroupCategory">Category</label>
+									<select class="form-select" id="inputGroupCategory">
+										<option selected>Choose...</option>
+										<option value="1">house</option>
+										<option value="2">health</option>
+										<option value="3">food</option>
+										<option value="4">rent</option>
+										<option value="5">loan</option>
+										<option value="6">car</option>
+										<option value="7">leisure</option>
+										<option value="8">clothes</option>
+									</select>
+							</div>
 							
 							
 							<div class="input-group">
-  <span class="input-group-text">With textarea</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
+								<span class="input-group-text">Comment (optional)</span>
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+							</div>
 							
-						<button class="btn btn-lg m-3 signButton" type="submit">
-							<i class="icon-user-plus"></i> Save
-						</button>
+							<button class="btn btn-sm m-3 signButton" type="submit">
+								<i class="icon-user-plus"></i> Save
+							</button>
 						
-												<button class="btn btn-lg m-3 signButton" type="submit">
-							<i class="icon-user-plus"></i> Cancel
-						</button>
+							<button class="btn btn-sm m-3 signButton" type="submit">
+								<i class="icon-user-plus"></i> Cancel
+							</button>
                     
+						</div>
+						
 					</div>
-				</div>
-			</form>
+					
+				</form>
+				
 			</main>
 
-   <!-- <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="#" class="navbar-brand">Home</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navLinks">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Add Income</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Add Expense</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Balance</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Settings</a>
-                </li>               
-				<li class="nav-item">
-                    <a href="" class="nav-link">Log out</a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-		
-	<!--<div id="container">	
-		<main>	
-		
-			<nav class="topnav">
-				<ul>
-					<li><a href="#">Add income</a></li>
-					<li><a href="#">Add expense</a></li>
-					<li><a href="#">View balance</a></li>
-					<li><a href="#">Settings</a></li>
-					<li><a href="#">Log out!</a></li>
-				</ul>
-			</nav>
-			
-			<div id="section1">
-				<div class="row">
-					<label> Amount: <input type="number" name="amount" ></label>
-				</div>
-				
-				<div class="row">
-					<label for="payment"> Payment method</label>
-					<select id="payment" name="payment">
-					
-						<option value="c">cash</option>
-						<option value="dc" selected>debit card</option>
-						<option value="cc">credit card</option>
-					
-					</select>				
-				</div>
-				
-				<div class="row">
-					<label> Date: <input type="date" name="dzien"></label>
-				</div>
-
-				<div class="row">
-					<label for="category"> Category</label>
-						<select id="category" name="category">
-							<option value="1">Food</option>
-							<option value="2">Rent</option>
-							<option value="3">Transport</option>
-							<option value="4">Healthcare</option>
-							<option value="5">Clothes</option>
-							<option value="6">Telecommunication</option>
-							<option value="7">Hygiene</option>
-							<option value="8">Entertainment</option>
-							<option value="9">Trips</option>
-							<option value="10">Training</option>
-							<option value="11">Books</option>
-							<option value="12">Savings</option>
-							<option value="13">Debts</option>
-							<option value="14">Other</option>
-					</select>	
-				</div>	
-				
-				<div class="row">
-					<div><label for="comment"> Comment: (optional)</label></div>
-					<textarea name="comment" id="comment" maxlength="25" minlength="10"></textarea>
-				</div>
-				
-			</div>
-			
-				<div class="row1">
-				
-					<input type="submit" value="Save">
-					<input type="reset" value="Cancel">
-					
-				</div>
-	
-		</main>		
-	</div>-->
-	
         <footer>
             
             <div class="col my-2 footer">
